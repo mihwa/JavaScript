@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <div style="text-align:right;color:white;
-width:100%;background-color: #333">${abc.name}님 환영합니다</div>
+width:100%;background-color: #333">${user.name}님 환영합니다</div>
 <div id="nav">
 	
 	<ul>

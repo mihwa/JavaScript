@@ -4,12 +4,14 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>Document</title>
+	<script src="resources/js/index.js"></script>
 </head>
 <body>
-  <%-- <form action="${context}/home.do">
-	<input type="submit" value="홈으로" /> 
-	</form> --%> 
-		<a href="${context}/home.do">홈으로</a>
+		<a href="#" id="atag">홈으로</a>
 </body>
+<script type="text/javascript">
+ window.onload = start("${context}");
+ 	
+</script>
 </html>
 	

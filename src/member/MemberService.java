@@ -1,20 +1,19 @@
-
 package member;
 
 import java.util.List;
 
 import global.CommonService;
+import subject.SubjectMember;
+
 
 
 public interface MemberService extends CommonService{
 	public String regist(MemberBean mem);
-	public Object update(MemberBean mem);
-	public String delete(String id);
-	public MemberBean findById(String id);
-	public String login(MemberBean member);
-	public MemberBean getSession();
-	public void logoutSession();
+	public MemberBean findById(String findID);
+	public void update(MemberBean stu2);
+	public void delete(MemberBean member);
+	public SubjectMember login(MemberBean member);
+	public void logout(MemberBean member);
+	public MemberBean show();
 	
 }
-
-
