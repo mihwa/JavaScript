@@ -10,8 +10,14 @@ var global = {
 		},
 		move : function(){
 			location.href=this.context+"/douglas.do";
+		
 		}
 	};
+var test ={
+		init : function(){
+			alert('====')
+		}
+};
 
 
 
