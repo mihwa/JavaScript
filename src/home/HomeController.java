@@ -9,10 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import global.Command;
-import global.DispatcherServlet;
-import global.Separator;
-
 /**
  * Servlet implementation class HomeController
  */
@@ -20,11 +16,22 @@ import global.Separator;
 public class HomeController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-				
-		System.out.println("====HomeController=====");
-		DispatcherServlet.send(request, response, Separator.init(request, response));
-		
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("서블릿 입장..");
+		String servletPath = request.getServletPath();
+		System.out.println("서블릿 경로"+servletPath);
+		String path = servletPath.split("/")[1];
+		String view = path.substring(0, path.indexOf("."));
+		System.out.println("가야할 경로 : "+view);
+		RequestDispatcher dis = 
+				request.getRequestDispatcher("/WEB-INF/global/"+view+".jsp");
+		dis.forward(request, response);
 	}
+
 	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
 	}
+
+}

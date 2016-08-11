@@ -9,8 +9,8 @@
 <section class="formbox">
 <p>회원 정보입력</p>
 		NAME : <input type="text" id="name" name="name" value="" />
-		SSN : <input type="text" id="ssn" name="snn" value="" />
-		<button id="bt_spec_show">회원정보 보기</button>
+		SSN : <input type="text" id="ssn" name="ssn" value="" />
+		<button id="bt_spec_show">회원정보생성</button>
 		<button id="bt_make_account">통장개설</button>
 </section>
 
@@ -34,6 +34,7 @@
 </div>
 <jsp:include page="../global/footer.jsp"/>
 <jsp:include page="../global/end.jsp"/>
+<script src="${js}/douglas.js"></script>
 <script>
-	window.onload=creator_init();
+	account_init();
 </script>

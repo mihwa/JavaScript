@@ -9,7 +9,7 @@
 		<table id="member_detail">
 				<tr>
 				<td rowspan="5" style="width:30%">
-				<img src="${img}/member/${user.Img}" alt="W3Schools.com" width="104"
+				<img src="${img}/member.jpg/${user.Img}" alt="member" width="104"
 			height="142"></td>
 				<td style="width:20%" class="font_bold bg_color_yellow">ID</td>
 				<td style="width:40%">${user.id}</td>
@@ -32,7 +32,7 @@
 		
 			<tr>
 				
-				<td class="font_bold bg_color_yellow">전공과목</td>
+				<td class="font_bold ">전공과목</td>
 				<td>${user.major}</td>
 			</tr>
 			<tr>

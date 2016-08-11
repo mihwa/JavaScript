@@ -1,6 +1,6 @@
 @CHARSET "UTF-8";
 #container{width:100px;}
-#formbox{padding:20px;border:1px solid #999999;margin:0 auto;border:}
-#databox{float: left;width:400px;margin-left: 20px;padding: 20px;border: }
+#formbox{padding:20px;border:1px solid #999999;margin:0 auto;display:block}
+#databox{float: left;width:400px;margin-left: 20px;padding: 20px;border:1px solid #999999; }
 #name,#height,#weight{width:200px}
 #databox>div{padding:5px;border-bottom: 1px solid #999999;}
