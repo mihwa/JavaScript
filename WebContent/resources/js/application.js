@@ -5,14 +5,14 @@ var application = (function(){
 		sessionStorage.setItem('context',param);
 	};
 	var getContextPath = function(){
-		return sessionStoragegetItem('context');
-	}
+		return sessionStorage.getItem('context');
+	};
 	var to_douglas=function(){
-		location.herf=getContextPath+"/douglas.do";
+		location.href=getContextPath()+"/douglas.do";
 	};
 	var go_home = function() {
-		location.href=getContextPath+"/home.do";
-	}
+		location.href=getContextPath()+"/home.do";
+	};
 	return{
 		init:init,
 		getContextPath:getContextPath,

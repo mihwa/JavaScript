@@ -2,8 +2,8 @@
 <jsp:include page="../global/top.jsp"/>
 <jsp:include page="../global/header.jsp"/>
 <jsp:include page="../global/navi.jsp"/>
-
 <link rel="stylesheet" href="${css}/douglas.css" />
+
 <div id="container">
 <section class="formbox">
 	
@@ -22,5 +22,5 @@
 <jsp:include page="../global/end.jsp"/>
 <script src="${js}/douglas.js"></script>
 <script>
-kaup.init();
+	kaup.init();
 </script>
